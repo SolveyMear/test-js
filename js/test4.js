@@ -4,7 +4,7 @@ let number1
 
 console.log("Exercice 4: Deviner un chiffre")
 while (number1 !== guess){
-    number1 = prompt('Entre un chiffre')*1
+    //number1 = prompt('Entre un chiffre')*1
     console.log(number1)
     if(number1 !== guess){
         console.log('Essaye encore')

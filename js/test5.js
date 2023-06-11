@@ -26,7 +26,7 @@ console.log(getRandomNumber())
 function guess2(){
 
     for (let i = 0; i < 3; i++){
-        let numberTried = prompt('entrez un nombre entre 0 et 10')*1
+        //let numberTried = prompt('entrez un nombre entre 0 et 10')*1
         if(numberTried == randomNumber){
             console.log('Bravo')
             break

@@ -1,7 +1,7 @@
 //on affiche que le produit d'une multiplication est positif ou négatif
 
-let A = prompt('entrer un nombre A')
-let B = prompt('entrer un nombre B')
+//let A = prompt('entrer un nombre A')
+//let B = prompt('entrer un nombre B')
 let result = A * B
 let signe
 
