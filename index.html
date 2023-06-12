@@ -7,34 +7,66 @@
 		<title>Vite App</title>
 	</head>
 	<body>
-            <h1>Mes exercices JavaScript</h1>
-            <section class="exercice1">
-                  <div class="container ex1">
-                        <form action="javascript: void(0)" method="get" class="birth-year-form">
-                              <label for="birth-year">Entrez votre année de naissance et nous vous conseillerons un film</label>
-                              <input type="number" name="birth-year" class="birth-year-input"  required>
-                        </form>
-                        <span class="movie-returned"></span>
-                  </div>
-            </section>
-            <section class="exercice2">
-                  <div class="container ex2">
-                        <form action="javascript: void(0)" method="get" class="multiplication-form">
-                              <label for="multiplication">Entrez un premier chiffre</label>
-                              <input type="number" name="first-number" id="first-number-input" >
-                              <label for="multiplication">Entrez un second chiffre</label>
-                              <input type="number" name="second-number" id="second-number-input">
-                        </form>
-                        <span class="ex2-result-span"></span>
-                  </div>
-            </section>
-            <section class="exercice3">
-                  <div class="container ex3">
-                        <form action="javascript: void(0)">
-                              <label for="descending-order">Entrez un chiffre</label>
-                        </form>
-                  </div>
-            </section>
-            <script type="module" src="js/main.js"></script>
-      </body>
-      </html>
+		<h1>JavaScript</h1>
+		<section class="exercice1">
+			<div class="container ex1">
+				<h3 class="exercice">
+					1. <span class="ex-title"> Proposer un film selon l'âge:</span> Entre
+					0 et 13 ans, Lilo et Stitch, entre 13 et 18 ans, Matrix, et au delà de
+					18 ans, Evil Dead.
+				</h3>
+
+				<form action="javascript: void(0)" method="get" class="birth-year-form">
+					<label for="birth-year" class="birth-year-label"
+						>Entrez votre année de naissance et nous vous conseillerons un
+						film</label
+					>
+					<input
+						type="number"
+						name="birth-year"
+						class="birth-year-input"
+						required />
+				</form>
+
+				<span class="movie-returned"></span>
+			</div>
+		</section>
+
+		<section class="exercice2">
+			<div class="container ex2">
+				<h3 class="exercice">
+					Indiquer si le produit de la multiplication de 2 chiffres est positif
+					ou négatif.
+				</h3>
+
+				<form
+					action="javascript: void(0)"
+					method="get"
+					class="multiplication-form">
+					<label for="multiplication">Entrez un premier chiffre</label>
+					<input type="number" name="first-number" id="first-number-input" />
+					<label for="multiplication">Entrez un second chiffre</label>
+					<input type="number" name="second-number" id="second-number-input" />
+				</form>
+
+				<span class="ex2-result-span"></span>
+			</div>
+		</section>
+		<section class="exercice3">
+			<div class="container ex3">
+				<h3 class="exercice">
+					Afficher tous les chiffres inférieurs au chiffre entré par ordre
+					décroissant.
+				</h3>
+				<form action="javascript: void(0)">
+					<label for="descending-order" class="countdown-label"
+						>Entrez un chiffre entre 0 et 10</label
+					>
+					<input type="number" name="countdown" id="countdown-input" />
+				</form>
+                        <span class="countdown-returned"></span>
+			</div>
+		</section>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

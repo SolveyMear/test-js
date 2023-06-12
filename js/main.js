@@ -1,4 +1,3 @@
-import "../scss/variables.scss"
 import"../scss/test1.scss"
 import "../js/test1.js"
 import "../js/test2.js"

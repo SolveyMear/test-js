@@ -1,18 +1,22 @@
-//on affiche par ordre décroissant tous les chiffres avant le chiffre indiqué par l"utilisateur
+window.addEventListener('load', function(){
 
-//let number = prompt('Entrez chiffre entre 0 et 10')
+    //assign variable outside scope so as to call the function
+    let countdownInput = document.querySelector("#countdown-input")
+    let coundownSpan = document.querySelector(".countdown-returned")
+    
+    function countdown(){
+        let countdownInputValue = countdownInput.value
+        countdownInputValue = parseInt(countdownInputValue)
+        coundownSpan.innerText = ''     
 
-console.log("Exercice3: afficher par ordre décroissant les chiffres")
-if (number < 0 || number > 10){
-    console.log('Le chiffre doit être compris entre 0 et 10')
-} else {
-    for (let i = number; i >= 0; i--){
-        console.log(i)
+        if (countdownInputValue < 0 || countdownInputValue > 10){
+            coundownSpan.innerText = 'Le chiffre doit être compris entre 0 et 10'
+        } else {
+            for (let i = countdownInputValue; i >= 0; i--){
+                coundownSpan.innerText += (' ' + i + ' - ')               
+            }      
+        }        
     }
-while(number >= 0){
-    console.log(number)
-    number--
-}
-}
+    countdownInput.addEventListener('change', countdown)
+})
 
-//PROBLEME DANS CELUI LA, IL AFFICHE 2 FOIS LA BOUCLE

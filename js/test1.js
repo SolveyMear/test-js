@@ -20,12 +20,13 @@ window.addEventListener('load', function	() {
 			console.log('nope')
 			movieReturnedSpan.innerText = "Please enter your birth year"
 		} else if(age <= 13) {
-			movieReturnedSpan.innerText = "Je vous conseille Lilo & Stitch";
+			movieReturnedSpan.innerText = "Lilo & Stitch";
 			console.log('Lilo et Stitch')
 		} else if (age < 18) {
-			console.log("Je vous conseille Matrix");
+			console.log("Matrix");
+			movieReturnedSpan.innerText= "Matrix"
 		} else {
-			movieReturnedSpan.innerText = "Je vous conseille Evil Dead";
+			movieReturnedSpan.innerText = "Evil Dead";
 		}
 		
 	}
