@@ -9,7 +9,7 @@ function getRandomNumber(max){
 const solution = getRandomNumber(10)
 -------------------------------------------------------------------------------------------------------------------*/
 
-window/addEventListener('load', function(){
+window.addEventListener('load', function(){
 
     let randomNumber
 
@@ -23,24 +23,34 @@ window/addEventListener('load', function(){
     
           let secondNumberGuess = document.querySelector("#guess-number2-input")
           let secondNumberSpan = document.querySelector('.guess-number2-result')
-          let numberOfChances = 1
+          let numberOfChances = 3
+          let isBravo = false
     function guessSecondNumber(){
-          let secondNumberValue = secondNumberGuess.value
-          secondNumberValue = parseInt(secondNumberValue)
-          console.log('the secondNumberValue is: ', secondNumberValue)
-          for (let i = numberOfChances+1; i > 0; i--){
-    
-                if(secondNumberValue === randomNumber){
-                      console.log('Bravo')
-                      secondNumberSpan.innerText = 'Bravo!'
-                      break
-                } else if(secondNumberValue !== randomNumber){
-                      numberOfChances--
-                      console.log('Raté')
-                      secondNumberSpan.innerText = 'Raté, vous n\'avez plus que ' + (numberOfChances + 1) + ' chances.'
-                      break
-                } 
-          }
+        
+        let secondNumberValue = secondNumberGuess.value
+        secondNumberValue = parseInt(secondNumberValue)
+        console.log('the secondNumberValue is: ', secondNumberValue)
+        if (numberOfChances === 0){
+            return
+        }
+        if(isBravo === true){
+            return
+        }
+        numberOfChances--
+          
+          if(secondNumberValue === randomNumber){
+              console.log('Bravo')
+              secondNumberSpan.innerText = 'Bravo!'
+              isBravo = true
+
+            } else if(secondNumberValue !== randomNumber){
+                console.log('Raté')
+                secondNumberSpan.innerText = 'Raté, vous n\'avez plus que ' + (numberOfChances) + ' chances.'
+            }
+            if (numberOfChances === 0 && secondNumberValue !== randomNumber){
+                secondNumberSpan.innerText = 'Vous avez perdu'
+            }
+          
     }
     
     secondNumberGuess.addEventListener('change', guessSecondNumber)

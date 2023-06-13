@@ -5,6 +5,7 @@ window.addEventListener('load', function	() {
 	// //lilo et stitch moins de 13 ans inclu, matrix de 14 à 18 ans, evil dead plus de 18 ans
 	let birthYearInput = document.querySelector('.birth-year-input');
 	function getMovie(){
+		
 		let birthYear = birthYearInput.value
 		console.log('hello', {birthYear})
 		birthYear = parseInt(birthYear)

@@ -35,7 +35,7 @@
 		<section class="exercice2">
 			<div class="container ex2">
 				<h3 class="exercice">
-					Indiquer si le produit de la multiplication de 2 chiffres est positif
+					2. Indiquer si le produit de la multiplication de 2 chiffres est positif
 					ou négatif.
 				</h3>
 
@@ -55,7 +55,7 @@
 		<section class="exercice3">
 			<div class="container ex3">
 				<h3 class="exercice">
-					Afficher tous les chiffres inférieurs au chiffre entré par ordre
+					3.Afficher tous les chiffres inférieurs au chiffre entré par ordre
 					décroissant.
 				</h3>
 				<form action="javascript: void(0)">
@@ -70,7 +70,7 @@
 		<section class="exercice4">
 			<div class="container ex4">
 				<h3 class="exercice">
-					Devinez le chiffre (entre 1 et 10).
+					4. Devinez le chiffre (entre 1 et 10).
 				</h3>
 				<form action="javascript: void(0)">
 					<label for="guess-number1" class="guess-number1-label"
@@ -81,10 +81,11 @@
                         <span class="guess-number1-result"></span>
 			</div>
 		</section>
+		
 		<section class="exercice5">
 			<div class="container ex5">
 				<h3 class="exercice">
-					Devinez le chiffre (vous avez trois essais).
+					5. Devinez le chiffre (vous avez trois essais).
 				</h3>
 				<form action="javascript: void(0)">
 					<label for="guess-number2" class="guess-number2-label"
@@ -94,6 +95,80 @@
 				</form>
                         <span class="guess-number2-result"></span>
 			</div>
+		</section>
+
+		<section class="exercice6">
+			<div class="container ex6">
+				<h3 class="exercice">
+					6. Est-ce un nombre premier?
+				</h3>
+				<form action="javascript: void(0)">
+					<label for="isPrime" class="is-prime-number"
+						>Entrez un chiffre pour savoir s'il est premier</label
+					>
+					<input type="number" name="prime" id="is-prime-input" />
+				</form>
+                        <span class="is-prime-result"></span>
+			</div>
+		</section>
+
+		<section class="exercice7">
+			<div class="container ex7">
+				<h3 class="exercice">
+					6. Est-ce un palindrome?
+				</h3>
+				<form action="javascript: void(0)">
+					<label for="isPalindrome" class="is-palindrome-number"
+						>Entrez un mot pour savoir si c'est un palindrome</label
+					>
+					<input type="text" name="palindrome" id="is-palindrome-input" />
+				</form>
+                        <span class="is-palindromeresult"></span>
+			</div>
+		</section>
+
+		<section class="exercice8">
+			<div class="container ex8">
+				<table>
+					<caption>Students</caption>
+
+						<tr>
+							<th>Name</th>
+							<th>Notes</th>
+						</tr>
+						<tr>
+							<td>John</td>
+							<td>1, 20, 18, 19, 12</td>
+						</tr>
+						<tr>
+							<td>Jane</td>
+							<td>17, 18, 80, 13, 15</td>
+						</tr>
+						<tr>
+							<td>Sophie</td>
+							<td>17, 12, 14, 15, 13</td>
+						</tr>
+						<tr>
+							<td>Marc</td>
+							<td>2, 3, 5, 8, 9</td>
+						</tr>
+						<tr>
+							<td>Manon</td>
+							<td>18, 17, 18, 19, 12</td>
+						</tr>
+				</table>
+
+				<form action="javascript: void(0)">
+					<label for="average">
+						Enter a name to get her or his average
+					</label>
+					<input type="text" name="name-average-input" id="name-average-input">
+				</form>
+				<button class="podium">Click to get top 3 students</button>
+
+
+			</div>
+
 		</section>
 		<script type="module" src="js/main.js"></script>
 	</body>

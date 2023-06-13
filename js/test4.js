@@ -9,15 +9,12 @@ console.log(numberTest)
 		numberTestValue = parseInt(numberTestValue);
 		let answer = 8;
         guessResultSpan.innerText = ''
-		while (numberTestValue !== answer) {
-			console.log(numberTestValue);
-			console.log("hello?");
 			if (numberTestValue !== answer) {
 				guessResultSpan.innerText = "Raté, essaye encore";
 				console.log("Essaye encore");
                 return
 			}
-		}
+		
 		guessResultSpan.innerText = "Bravo! La réponse était 8";
 		console.log("Bravo!");
 	}

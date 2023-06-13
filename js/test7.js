@@ -1,26 +1,32 @@
 //faire une fonction qui renvoie si un mot est un palindrome ou pas
+window.addEventListener("load", function () {
+	let wordInput = document.querySelector("#is-palindrome-input");
+	let wordResultSpan = document.querySelector(".is-palindromeresult");
 
-console.log("Exercice 7: Ecrire une fonction qui renvroi true si un mot est un palindrome")
-function isPalindrome(word) {
-    let allCapsWord = word.toUpperCase()
-	let joinedWord = allCapsWord.split("").reverse().join('');
-	// splitWord.reverse();
-    // //console.log(reversedWord)
-	// let joinedWord = splitWord.join("");
-    // //console.log(joinedWord)
-	if (joinedWord !== allCapsWord) {
-		return false;
-		console.log("is it true?");
-	} else {
-		return true;
-		console.log("hello");
-		console.log(joinedWord);
+	function isPalindrome() {
+		//debugger
+		let wordInputValue = wordInput.value;
+		let allCapsWord = wordInputValue.toUpperCase();
+		let joinedWord = allCapsWord.split("").reverse().join("");
+		if (!isNaN(parseInt(wordInputValue))) {
+			wordResultSpan.innerText = "";
+			return
+		}
+		wordResultSpan.innerText = "";
+		console.log(typeof wordInputValue);
+
+		if (joinedWord !== allCapsWord) {
+			wordResultSpan.innerText = `${wordInputValue} is not a palindrome`;
+			console.log("is it true?");
+		} else {
+			wordResultSpan.innerText = `${wordInputValue} is a palindrome`;
+			console.log("hello");
+			console.log(joinedWord);
+		}
+		if (wordInputValue == "") {
+			wordResultSpan.innerText = "";
+		}
 	}
-}
-console.log(isPalindrome("kayak"));
-console.log(isPalindrome("sos"));
-console.log(isPalindrome("seves"));
-console.log(isPalindrome("Kayak"));
-console.log(isPalindrome("SOS"));
-console.log(isPalindrome("ressasser"));
-console.log(isPalindrome("bonjour"));
+
+	wordInput.addEventListener("change", isPalindrome);
+});

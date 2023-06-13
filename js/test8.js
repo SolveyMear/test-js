@@ -45,7 +45,7 @@ const calcMoyenne = (notes) => {
 
 for (let student of students){
     student.moyenne = calcMoyenne(student.notes)
-    student.worst = Math.min(...student.notes)
+    student.worst = Math.min(...student.notes) 
     student.best = Math.max(...student.notes)
 }
 
