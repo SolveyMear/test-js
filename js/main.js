@@ -1,4 +1,6 @@
-import"../scss/test1.scss"
+import"../scss/index.scss"
+//import"../scss/titles-labels-inputs.scss"
+import"../scss/specific-forms.scss"
 import "../js/test1.js"
 import "../js/test2.js"
 import "../js/test3.js"

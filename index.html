@@ -7,157 +7,155 @@
 		<title>Vite App</title>
 	</head>
 	<body>
-		<h1>JavaScript</h1>
-		<section class="exercice1">
-			<div class="container ex1">
-				<h3 class="exercice">
-					1. <span class="ex-title"> Proposer un film selon l'âge:</span> Entre
-					0 et 13 ans, Lilo et Stitch, entre 13 et 18 ans, Matrix, et au delà de
-					18 ans, Evil Dead.
-				</h3>
+		<h1>JavaScript training</h1>
+		<div class="sections-structure">
 
-				<form action="javascript: void(0)" method="get" class="birth-year-form">
-					<label for="birth-year" class="birth-year-label"
-						>Entrez votre année de naissance et nous vous conseillerons un
-						film</label
-					>
-					<input
+			<section class="exercice">
+				<div class="container ex1">
+					<h3 class="exercice-title">
+						1.  Suggest a movie according to the age. (Lilo & Stitch under 13, Matrix between 13 and 18, and Evil Dead after 18.)
+					</h3>
+					
+					<form action="javascript: void(0)" method="get" class="birth-year-form">
+						<label for="birth-year" class="birth-year-label label" 
+						>Type in your birth year and we'll suggest a movie</label
+						>
+						<input
 						type="number"
 						name="birth-year"
 						class="birth-year-input"
 						required />
-				</form>
-
-				<span class="movie-returned"></span>
-			</div>
-		</section>
-
-		<section class="exercice2">
-			<div class="container ex2">
-				<h3 class="exercice">
-					2. Indiquer si le produit de la multiplication de 2 chiffres est positif
-					ou négatif.
-				</h3>
-
-				<form
+						<span class="movie-returned result-span">You should watch:</span>
+					</form>
+					
+				</div>
+			</section>
+			
+			<section class="exercice">
+				<div class="container ex2">
+					<h3 class="exercice-title">
+						2. Display if the product of the multiplication is positive or negative.
+					</h3>
+					
+					<form
 					action="javascript: void(0)"
 					method="get"
 					class="multiplication-form">
-					<label for="multiplication">Entrez un premier chiffre</label>
+					<label for="multiplication" class="label">Type a number</label>
 					<input type="number" name="first-number" id="first-number-input" />
-					<label for="multiplication">Entrez un second chiffre</label>
+					<label for="multiplication" class="label
+					">Type a second number</label>
 					<input type="number" name="second-number" id="second-number-input" />
+					<span class="ex2-result-span result-span"></span>
 				</form>
-
-				<span class="ex2-result-span"></span>
+				
 			</div>
 		</section>
-		<section class="exercice3">
+		<section class="exercice">
 			<div class="container ex3">
-				<h3 class="exercice">
-					3.Afficher tous les chiffres inférieurs au chiffre entré par ordre
-					décroissant.
+				<h3 class="exercice-title">
+					3. Display all the numbers in descending order after the typed in number.
 				</h3>
 				<form action="javascript: void(0)">
-					<label for="descending-order" class="countdown-label"
-						>Entrez un chiffre entre 0 et 10</label
+					<label for="descending-order" class="countdown-label label"
+					>Enter a number from 0 to 10</label
 					>
 					<input type="number" name="countdown" id="countdown-input" />
+					<span class="countdown-returned result-span"></span>
 				</form>
-                        <span class="countdown-returned"></span>
 			</div>
 		</section>
-		<section class="exercice4">
+		<section class="exercice">
 			<div class="container ex4">
-				<h3 class="exercice">
-					4. Devinez le chiffre (entre 1 et 10).
+				<h3 class="exercice-title">
+					4. Guess the number (0-10).
 				</h3>
 				<form action="javascript: void(0)">
-					<label for="guess-number1" class="guess-number1-label"
-						>Entrez un chiffre entre 0 et 10</label
+					<label for="guess-number1" class="guess-number1-label label"
+					>Enter a number from 0 to 10</label
 					>
 					<input type="number" name="guess" id="guess-number1-input" />
+					<span class="guess-number1-result result-span"></span>
 				</form>
-                        <span class="guess-number1-result"></span>
 			</div>
 		</section>
 		
-		<section class="exercice5">
+		<section class="exercice">
 			<div class="container ex5">
-				<h3 class="exercice">
-					5. Devinez le chiffre (vous avez trois essais).
+				<h3 class="exercice-title">
+					5. Guess the number (3 chances).
 				</h3>
 				<form action="javascript: void(0)">
-					<label for="guess-number2" class="guess-number2-label"
-						>Entrez un chiffre entre 0 et 10, vous n'avez que trois essais.</label
+					<label for="guess-number2" class="guess-number2-label label"
+					>Type in a number, you have three chances</label
 					>
 					<input type="number" name="guess" id="guess-number2-input" />
+					<span class="guess-number2-result result-span"></span>
 				</form>
-                        <span class="guess-number2-result"></span>
 			</div>
 		</section>
-
-		<section class="exercice6">
+		
+		<section class="exercice">
 			<div class="container ex6">
-				<h3 class="exercice">
-					6. Est-ce un nombre premier?
+				<h3 class="exercice-title">
+					6. Is it a prime number?
 				</h3>
 				<form action="javascript: void(0)">
-					<label for="isPrime" class="is-prime-number"
-						>Entrez un chiffre pour savoir s'il est premier</label
+					<label for="isPrime" class="is-prime-number label"
+					>Entrez un chiffre pour savoir s'il est premier</label
 					>
 					<input type="number" name="prime" id="is-prime-input" />
+					<span class="is-prime-result result-span"></span>
 				</form>
-                        <span class="is-prime-result"></span>
 			</div>
 		</section>
-
-		<section class="exercice7">
+		
+		<section class="exercice">
 			<div class="container ex7">
-				<h3 class="exercice">
-					6. Est-ce un palindrome?
+				<h3 class="exercice-title">
+					7. Is it a palindrome?
 				</h3>
 				<form action="javascript: void(0)">
-					<label for="isPalindrome" class="is-palindrome-number"
-						>Entrez un mot pour savoir si c'est un palindrome</label
+					<label for="isPalindrome" class="is-palindrome-number label"
+					>Type in a word to know if it's a palindrome</label
 					>
 					<input type="text" name="palindrome" id="is-palindrome-input" />
+					<span class="is-palindromeresult result-span"></span>
 				</form>
-                        <span class="is-palindromeresult"></span>
 			</div>
 		</section>
-
-		<section class="exercice8">
+		
+		<section class="exercice">
 			<div class="container ex8">
 				<table>
 					<caption>Students</caption>
-
-						<tr>
-							<th>Name</th>
-							<th>Notes</th>
-						</tr>
-						<tr>
-							<td>John</td>
-							<td>1, 20, 18, 19, 12</td>
-						</tr>
-						<tr>
-							<td>Jane</td>
-							<td>17, 18, 80, 13, 15</td>
-						</tr>
-						<tr>
-							<td>Sophie</td>
-							<td>17, 12, 14, 15, 13</td>
-						</tr>
-						<tr>
-							<td>Marc</td>
-							<td>2, 3, 5, 8, 9</td>
-						</tr>
-						<tr>
-							<td>Manon</td>
-							<td>18, 17, 18, 19, 12</td>
-						</tr>
+					
+					<tr>
+						<th>Name</th>
+						<th>Notes</th>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td>1, 20, 18, 19, 12</td>
+					</tr>
+					<tr>
+						<td>Jane</td>
+						<td>17, 18, 80, 13, 15</td>
+					</tr>
+					<tr>
+						<td>Sophie</td>
+						<td>17, 12, 14, 15, 13</td>
+					</tr>
+					<tr>
+						<td>Marc</td>
+						<td>2, 3, 5, 8, 9</td>
+					</tr>
+					<tr>
+						<td>Manon</td>
+						<td>18, 17, 18, 19, 12</td>
+					</tr>
 				</table>
-
+				
 				<form action="javascript: void(0)">
 					<label for="average">
 						Enter a name to get her or his average
@@ -165,11 +163,13 @@
 					<input type="text" name="name-average-input" id="name-average-input">
 				</form>
 				<button class="podium">Click to get top 3 students</button>
-
-
+				
+				
 			</div>
-
+			
 		</section>
+	</div>
 		<script type="module" src="js/main.js"></script>
 	</body>
-</html>
+	</html>
+	
