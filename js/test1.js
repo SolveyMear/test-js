@@ -30,6 +30,7 @@ window.addEventListener('load', function	() {
 			movieReturnedSpan.innerText = "Evil Dead";
 		}
 		
+		
 	}
 	birthYearInput.addEventListener('change', getMovie)
 	
